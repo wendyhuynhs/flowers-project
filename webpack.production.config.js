@@ -69,7 +69,7 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "styles.[contenthash].css",
     }),
-    new CleanWebpackPlugin(), // clean files on each build
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: "project",
       description: "project",
