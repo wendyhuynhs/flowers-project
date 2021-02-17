@@ -1,7 +1,5 @@
 # flowers-project
 
-Available Scripts:
-
 In the project directory, run:
 
 1. Npm Install
