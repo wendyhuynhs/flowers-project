@@ -6,4 +6,6 @@ exports[`App renders correctly 1`] = `ShallowWrapper {}`;
 
 exports[`Rendering Components renders App component correctly 1`] = `ShallowWrapper {}`;
 
+exports[`Rendering Components renders PostList component correctly 1`] = `ShallowWrapper {}`;
+
 exports[`Rendering Components renders SearchBar component correctly 1`] = `ShallowWrapper {}`;
