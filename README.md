@@ -3,3 +3,5 @@
 Npm install
 
 Npm run dev
+
+Npm start
