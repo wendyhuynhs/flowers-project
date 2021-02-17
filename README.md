@@ -18,10 +18,5 @@ In the project directory, run:
 
    - starts your server on localhost:3001
 
-4. Npm run dev
-
-   - starts your development server
-   - Open http://localhost:3000/ to view the UI
-
-5. Npm test
-   - Runs tests
+4. Npm test
+   - Runs test cases for application
