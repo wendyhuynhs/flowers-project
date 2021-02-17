@@ -1,0 +1,23 @@
+.container {
+  height: 75px;
+  margin: 0 auto;
+  width: 50%;
+  font-size: 15px;
+
+  form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 20px;
+  }
+  input {
+    width: 520px;
+    height: 40px;
+    font-size: 20px;
+    justify-self: end;
+  }
+
+  button {
+    width: max-content;
+    font-size: 20px;
+  }
+}

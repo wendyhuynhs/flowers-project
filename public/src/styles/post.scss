@@ -1,0 +1,37 @@
+.container {
+  border: 1px solid black;
+  width: 50%;
+  margin: 0 auto;
+  font-size: 15px;
+
+  form {
+    display: grid;
+    row-gap: 4px;
+  }
+
+  input {
+    padding: 5px 10px;
+    height: 35px;
+    margin: 20px 20px;
+    font-size: 15px;
+  }
+
+  textarea {
+    padding: 10px;
+    height: 200px;
+    margin: 2px 20px;
+    font-size: 15px;
+  }
+
+  button {
+    width: max-content;
+    justify-self: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .conditionalContainer {
+    display: grid;
+    margin: 3px 10px;
+  }
+}
