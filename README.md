@@ -2,8 +2,6 @@
 
 Available Scripts:
 
-Npm install
-
 In the project directory, run:
 
 1. Npm Install
