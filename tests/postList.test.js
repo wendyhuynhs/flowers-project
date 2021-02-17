@@ -15,7 +15,6 @@ describe("Post List Component", () => {
     store = mockStore({
       posts: [],
     });
-    store.clearActions();
 
     component = renderer.create(
       <Provider store={store}>
@@ -24,7 +23,7 @@ describe("Post List Component", () => {
     );
   });
 
-  it(" should render state from store", () => {
+  it("should render state from store", () => {
     expect(component.toJSON()).toMatchSnapshot();
   });
 });
