@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import Post from "./Post.js";
 
-const PostList = ({ posts, getPosts, error }) => {
+const PostList = ({ posts, getPosts }) => {
   useEffect(() => {
     getPosts();
   }, []);
@@ -20,10 +20,9 @@ const PostList = ({ posts, getPosts, error }) => {
   );
 };
 
-const mapStateToProps = ({ posts, error }) => {
+const mapStateToProps = ({ posts }) => {
   return {
     posts,
-    error,
   };
 };
 
