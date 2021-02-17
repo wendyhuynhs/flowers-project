@@ -10,8 +10,6 @@ const postsReducer = (state = [], action) => {
       return state.map((post) =>
         post.id === action.payload.id ? action.payload : post
       );
-    case "FAILED_GET_POST":
-      return ["error"];
     default:
       return state;
   }

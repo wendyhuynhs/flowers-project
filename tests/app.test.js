@@ -9,8 +9,6 @@ import PostList from "../public/src/components/PostList";
 const mockStore = configureMockStore([]);
 
 describe("Rendering Components", () => {
-  let store;
-  let component;
   it("renders App component correctly", () => {
     const app = shallow(<App />);
     expect(app).toMatchSnapshot();

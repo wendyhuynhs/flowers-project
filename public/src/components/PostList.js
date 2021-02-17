@@ -1,34 +1,29 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
-import styles from "../styles/postList.scss";
 import Post from "./Post.js";
 
-const PostList = ({ posts, getPosts }) => {
+const PostList = ({ posts, getPosts, error }) => {
   useEffect(() => {
     getPosts();
   }, []);
 
   return (
     <div>
-      {posts.length > 1 &&
-        posts.map((post) => {
-          return (
-            <div key={post.id}>
-              <Post post={post} />
-            </div>
-          );
-        })}
-
-      {posts[0] === "error" && (
-        <div className={styles.error}>Error Loading Posts</div>
-      )}
+      {posts.map((post) => {
+        return (
+          <div key={post.id}>
+            <Post post={post} />
+          </div>
+        );
+      })}
     </div>
   );
 };
 
-const mapStateToProps = ({ posts }) => {
+const mapStateToProps = ({ posts, error }) => {
   return {
     posts,
+    error,
   };
 };
 

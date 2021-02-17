@@ -11,7 +11,7 @@ export function* getPostsAsync(action) {
     yield put({ type: "GET_POSTS_ASYNC", payload: response.data });
   } catch (e) {
     console.log("Request Failed");
-    yield put({ type: "FAILED_GET_POST", payload: e });
+    yield put({ type: "FAILED_GET_POST", payload: true });
   }
 }
 
